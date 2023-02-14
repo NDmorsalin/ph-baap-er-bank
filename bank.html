@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baap er Bank</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <header class="w-9/12 mx-auto">
+      <h2 class="text-6xl text-blue-400 text-center">
+        Let's get some
+        <span class="font-bold text-blue-800">Moooony!!!</span>
+      </h2>
+    </header>
+
+    <main class="w-9/12 mx-auto my-8">
+      <div class="grid grid-cols-3 gap-x-4">
+        <div class="bg-green-400 p-6 rounded text-white">
+          <h2 class="text-3xl font-semibold mb-2">Deposit</h2>
+          <h2 class="text-4xl">$ <span class="displayDeposit">00</span></h2>
+        </div>
+        <div class="bg-pink-400 p-6 rounded text-white">
+          <h2 class="text-3xl font-semibold mb-2">Withdrawal</h2>
+          <h2 class="text-4xl">$ <span class="displayWithdrawal">00</span></h2>
+        </div>
+        <div class="bg-orange-400 p-6 rounded text-white">
+          <h2 class="text-3xl font-semibold mb-2">Balance</h2>
+          <h2 class="text-4xl">$ <span class="displayBalance">00</span></h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-cyan-300 p-8 rounded my-4">
+          <h4 class="text-2xl text-left font-bold mb-4">Please Deposit</h4>
+
+          <input
+            type="number"
+            name=""
+            id="inputDeposit"
+            class="border-2 rounded py-1 px-3 w-8/12 ml-8 mb-4 focus:outline-none focus:border-sky-500"
+            placeholder="$ Amount you want to Deposit"
+          />
+          <button
+            type="button"
+            class="depositBtn rounded py-2 px-4 bg-cyan-800 text-zinc-50 block  ml-8"
+          >
+          Deposit
+          </button>
+        </div>
+        <div class="bg-violet-300 p-8 rounded my-4">
+          <h4 class="text-2xl text-left font-bold mb-4">Please Withdrawal</h4>
+
+          <input
+            type="number"
+            name=""
+            id="inputWithdrawal"
+            class="border-2 rounded py-1 px-3 w-8/12 ml-8 mb-4 focus:outline-none focus:border-sky-500"
+            placeholder="$ Amount you want to  Withdrawal"
+          />
+          <button
+            type="button"
+            class="withdrawalBtn rounded py-2 px-4 bg-cyan-800 text-zinc-50 block  ml-8"
+          >
+            Withdrawal
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script/bank.js"></script>
+  </body>
+</html>
